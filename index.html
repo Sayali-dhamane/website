@@ -27,7 +27,7 @@ body {
 
 .container {
     background: white;
-    padding: 40px 30px;
+    padding: 15px 25px;
     border-radius: 14px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     width: 92%;
@@ -39,10 +39,18 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+       font-size: 20px;
     color: #222;
-    line-height: 1.3;
+    line-height: 1.5;
+    font-weight: 500;
     margin-bottom: 30px;
+ span{
+    font-size: 30px;
+    font-weight: 700;
+ }
+ p{
+    font-weight: 600;
+ }
 }
 
 .options {
@@ -50,14 +58,13 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-top: 10px;
-    
 }
 
 .option-btn {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     background: linear-gradient(180deg, #ff6b81, #ff4757);
@@ -79,13 +86,14 @@ h1 {
     font-size: 32px;
     color: #ff4757;
     /* font-family: 'Great Vibes', cursive; */
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .success-screen p {
-    font-size: 22px;
-    color: #444;
-    margin-bottom: 20px;
+    font-size: 20px;
+    /* color: #444; */
+    line-height: 1.7;
+    /* margin-bottom: 20px; */
        /* font-family: 'Great Vibes', cursive; */
 }
 
@@ -93,7 +101,7 @@ h1 {
 .gallery {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .gallery img {
@@ -107,7 +115,8 @@ h1 {
 .love-line {
     font-size: 22px;
     color: #ff4757;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
+    font-weight: 800;
     /* font-family: 'Dancing Script', cursive; */
 }
 
@@ -174,9 +183,9 @@ h1 {
 }
 
 .letter-card p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .close-btn {
@@ -233,15 +242,16 @@ h1 {
     <!-- PAGE 1 -->
     <div id="firstScreen">
         <h1>
-            Hey Vinit ❤️<br>
-            Will you be my Valentine?
+           <span> Hey Vinit </span>❤️<br>
+            Rose are red,Violet are fine,I know i am your wife but 
+            <p>Will you be my Valentine?</p>
         </h1>
 
         <div class="options">
-    <button class="option-btn" onclick="showSuccess()">YES, MY LOVE ❤️</button>
-    <button class="option-btn" onclick="showSuccess()">FOREVER YOURS 💖</button>
-    <button class="option-btn" onclick="showSuccess()">ONLY YOU 🤗</button>
-    <button class="option-btn" onclick="showSuccess()">ALREADY YOURS 😉💞</button>
+    <button class="option-btn" onclick="showSuccess()">YES 💞</button>
+    <button class="option-btn" onclick="showSuccess()">YES 💖</button>
+    <button class="option-btn" onclick="showSuccess()">YES 🤗</button>
+    <button class="option-btn" onclick="showSuccess()">YES 😉</button>
 </div>
 
     </div>
@@ -250,14 +260,18 @@ h1 {
     <div class="success-screen" id="successScreen">
         <h2>💖 YAY!!! 💖</h2>
         <P>Best Decision Ever 🤗😘</P>
-
+         <p>You are officially, proudlly and forever</p>
+         <p style="color: #ff4757;font-weight: 600;">The Valentine Of</p>
+          <p style="font-weight: 600;">💖 Sayali Dhamane 💖</p>
         <div class="gallery">
         <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Romantic Kissing GIF">
     </div>
-
+         <p>I choose you today, I'll choose you tomorrow,<br>
+        And I'll keep choosing you - always.
+        </p>
         <p class="love-line">I love you ❤️</p>
 
-        <button class="mail-btn" onclick="openLetter()">📩 I want to say something</button>
+        <button class="mail-btn" onclick="openLetter()">📩 click here</button>
     </div>
 
 </div>
@@ -267,21 +281,22 @@ h1 {
     <div class="letter-card">
         <h3>My Love ❤️</h3>
         <p>
-            I don't say this enough, but you truly mean a lot to me.
-            Thank you for being my happiness, my comfort, and my safest place.
+            Sometimes, it is hard to find the right words to tell you how much you mean to me.
+            I hope one day you will understand, that having you means the world to me.You are the best thing that has ever happened in my life. 
         </p>
         <p>
             Life feels brighter with you. Your smile, jokes, and care
             make everything better.
+            Thank you for being my happiness, my comfort, and my safest place.
         </p>
         <p>
             I hope we keep growing together, laughing, creating memories,
             and annoying each other forever ❤️
         </p>
 
-        <h3 style="color: #ff4757;font-family: 'Great Vibes', cursive;margin-bottom: 0px;">Happy Valentine's Day My Love ❤️</h3>
+        <h3 style="color: #ff4757;font-family: 'Great Vibes', cursive;margin-bottom: 0px;font-size: 20px;">Happy Valentine's Day My Love ❤️</h3>
 
-        <h2 style="color: #ff4757;font-family: 'Great Vibes', cursive;text-align: center;    font-size: 30px;">I love you so much baby 😘</p>
+        <h2 style="color: #ff4757;font-family: 'Great Vibes', cursive;text-align: center;    font-size: 25px;">I love you so much baby 😘</p>
 
         <button class="close-btn" onclick="closeLetter()">Close</button>
     </div>
@@ -320,6 +335,3 @@ function startHearts() {
 
 </body>
 </html>
-
-
-
